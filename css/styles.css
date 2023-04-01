@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+:root{
+    --branco: hsl(0, 0%, 100%);
+    --preto: hsl(0, 0%, 0%);
+    --cinza-escuro: hsl(0, 0%, 55%);
+    --cinza-muito-escuro: hsl(0, 0%, 41%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2{
+    text-transform: uppercase;
+}
+
+/* main */
+main{
+    margin:5em 1em;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+.flex-desktop input{
+    display: none;
+}
+
+.poster{
+    margin: 2em 0;
+}
+
+.poster div{
+    height: 150px;
+    margin: 1.5em 0;
+    color: var(--branco);
+}
+
+.poster div:nth-child(1){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-deep-earth.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-night-arcade.jpg')no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-soccer-team.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-grid.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(5){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-from-above.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(6){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-pocket-borealis.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(7){
+    background: linear-gradient(rgba(0,0,0,0.30), rgba(0,0,0,0.60)), url('../img/mobile/image-curiosity.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div:nth-child(8){
+    background: linear-gradient(rgba(5, 5, 5, 0.30), rgba(0, 0, 0, 0.60)), url('../img/mobile/image-fisheye.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.poster div p{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    padding: 2.5em 6.5em 1em .7em
+}
+
+.poster div#grid p{
+    padding: 2.5em 9em 1em 1em
+}
+
+.creations .boton{
+    display: block;
+    margin: auto;
+    padding: 1em 3em;
+    border: 1px solid var(--preto);
+    background: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: .4px .4px var(--preto);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+/*main */
+
+
+
+
+
