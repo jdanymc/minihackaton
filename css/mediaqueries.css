@@ -119,6 +119,36 @@
     .main__creations{
         padding: 50px;
     }
+    /* Jesus */
+      .footer__contain{
+        display: flex;
+        flex-direction: column;
+      }
+      .contain__footer-right {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+
+      }
+      /* .contain__title {
+      } */
+      .contain__bottons {
+        display: flex;
+        flex-direction: column;
+      }
+      .contain__footer-left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .contain__icon {
+        justify-content: center;
+      }
+    /*Jesus*/
   }
   
   @media (max-width: 425px) {

@@ -3,6 +3,12 @@
   --preto: hsl(0, 0%, 0%);
   --cinza-escuro: hsl(0, 0%, 55%);
   --cinza-muito-escuro: hsl(0, 0%, 41%);
+
+  --width-desktop: 1920px;
+  --color-White: hsl(0, 0%, 100%);
+  --color-Black: hsl(0, 0%, 0%);
+  --color-Dark-Gray: hsl(0, 0%, 55%);
+  --color-Very-Dark-Gray: hsl(0, 0%, 41%);
 }
 
 * {
@@ -152,3 +158,62 @@ h2 {
   margin-top: 30px;
   line-height: 1.5rem;
 }
+
+/* Jhon Dany*/
+
+/* Jesus */
+
+.footer {
+  /* size: var(--width-desktop); */
+  background-color: black;
+
+  
+}
+.footer__contain{
+  max-width: 1440px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contain__footer-right {
+  padding-top: 10px;
+  padding: 50px;
+}
+.contain__title {
+  padding-bottom: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contain__bottons {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+.bottons:hover {
+  cursor: pointer;
+  /* box-shadow: 10px 10px 40px gray; */
+}
+.contain__footer-left {
+  padding-top: 10px;
+  padding: 50px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contain__icon {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+  padding-bottom: 20px;
+}
+.contain__copiright {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--color-Dark-Gray);
+}
+
+/* Jesus */
