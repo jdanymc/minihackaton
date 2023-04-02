@@ -1,72 +1,154 @@
-*{
-    padding: 0;
-    margin: 0;
+:root {
+  --branco: hsl(0, 0%, 100%);
+  --preto: hsl(0, 0%, 0%);
+  --cinza-escuro: hsl(0, 0%, 55%);
+  --cinza-muito-escuro: hsl(0, 0%, 41%);
 }
-body{
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+}
+
+/* main Marcos*/
+.main__creations{
     max-width: 1440px;
-    font-size: 15px;
-}
-.visor{
-    padding: 150px;
-  
-    /* font-family: 'Alata', sans-serif; */
-font-family: 'Josefin Sans', sans-serif;
-border:1px red solid;
-
+    margin: 5em auto;
 }
 
-.visor__content{
-    display: block;
-    border:1px red solid;
-    width: 450px;
-    height: 250px;
-    background-color: white;
-    position: relative;
-    float: right;
-    transform: translate(0,-300px); 
-    padding: 80px 0 0 80px;   
-}
-.content__title{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-.content__text{
- margin-top: 30px;
- line-height: 1.5rem;
-}
-@media(max-width: 768px) {
-
-    .visor__imagen img{
-        width: 100%
-    }
-    .visor{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-    }
-    .visor__content{
-        display: inline-block;
-        border:1px red solid;
-        background-color: white;
-        transform: unset; 
-        width: 100%;
-        height: 100%;
-        padding: 50px 30px;
-    }
-    .content__title{
-        text-align: center;
-    }
-    .content__text{
-        margin-top: 20px;
-       }
+.main__creations h2 {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 2em;
 }
 
-@media(max-width: 425px) {
-    .visor{
-        padding: 20px;
-    }
-    .content__title{
-        font-size: 2rem;        
-    }
+.flex-desktop input {
+  display: none;
+}
+
+.poster {
+  margin: 2em 0;
+}
+
+.poster div {
+  height: 150px;
+  margin: 1.5em 0;
+  color: var(--branco);
+}
+
+.poster div:nth-child(1) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-deep-earth.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-night-arcade.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-soccer-team.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-grid.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(5) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-from-above.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(6) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-pocket-borealis.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(7) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-curiosity.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div:nth-child(8) {
+  background: linear-gradient(rgba(5, 5, 5, 0.3), rgba(0, 0, 0, 0.6)),
+    url("../img/mobile/image-fisheye.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.poster div p {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.7em;
+  padding: 2.5em 6.5em 1em 0.7em;
+}
+
+.poster div#grid p {
+  padding: 2.5em 9em 1em 1em;
+}
+
+.creations .boton {
+  display: block;
+  margin: auto;
+  padding: 1em 3em;
+  border: 1px solid var(--preto);
+  background: transparent;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 0.4px 0.4px var(--preto);
+  color: var(--preto);
+  cursor: pointer;
+}
+
+/*main*/
+.visor {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  font-family: "Josefin Sans", sans-serif;
+  /* border: 1px red solid; */
+}
+
+.visor__imagen img{
+    width: 65%;
+}
+.visor__content {
+  display: block;
+  /* border: 1px red solid; */
+  width: 50%;
+  background-color: white;
+  position: relative;
+  float: right;
+  transform: translate(0, -330px);
+  padding: 130px 0 0 130px;
+}
+.content__title {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.content__text {
+  margin-top: 30px;
+  line-height: 1.5rem;
 }
