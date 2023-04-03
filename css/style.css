@@ -217,3 +217,53 @@ h2 {
 }
 
 /* Jesus */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+    margin: 0px;
+    padding: 0px;
+    height: 620px;
+    width: 100%;
+  }
+  
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    color: white;
+    padding-top: 65px;
+    padding-left: 165px;
+  }
+  
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    padding-top: 20px;
+    font-family: "Alata", sans-serif;
+    color: white;
+    padding-top: 55px;
+    padding-right: 160px;
+  }
+  
+  .navbar__list-item {
+    display: inline-block;
+    border-radius: 20px;
+    transition: all 0.1s ease-in 0s;
+    cursor: pointer;
+  }
+  
+  .navbar__list-item:hover {
+    background-color: black;
+    transform: scale(1.15);
+  }
+  
+  .cuadro {
+    display: flex;
+    align-items: flex-start;
+    align-self: center;
+  }

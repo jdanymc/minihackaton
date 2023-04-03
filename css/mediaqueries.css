@@ -149,6 +149,24 @@
         justify-content: center;
       }
     /*Jesus*/
+    header {
+      background-image: url(../img/mobile/image-hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin: 0px;
+      padding: 0px;
+      height: 650px;
+      width: 100%;
+    }
+    .title {
+      font-size: 25px;
+      padding-top: 30px;
+      padding-left: 10px;
+    }
+    .navbar {
+      display: none;
+    }
   }
   
   @media (max-width: 425px) {
