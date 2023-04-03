@@ -22,15 +22,15 @@ body {
   font-size: 15px;
 }
 
-h1,
-h2 {
+.main__creations h1,
+.main__creations h2 {
   text-transform: uppercase;
 }
 
 /* main Marcos*/
-.main__creations{
-    max-width: 1440px;
-    margin: 5em auto;
+.main__creations {
+  max-width: 1440px;
+  margin: 5em auto;
 }
 
 .main__creations h2 {
@@ -130,6 +130,7 @@ h2 {
 
 /*main*/
 .visor {
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
@@ -137,8 +138,8 @@ h2 {
   /* border: 1px red solid; */
 }
 
-.visor__imagen img{
-    width: 65%;
+.visor__imagen img {
+  width: 65%;
 }
 .visor__content {
   display: block;
@@ -166,10 +167,8 @@ h2 {
 .footer {
   /* size: var(--width-desktop); */
   background-color: black;
-
-  
 }
-.footer__contain{
+.footer__contain {
   max-width: 1440px;
   color: #fff;
   display: flex;
@@ -183,7 +182,7 @@ h2 {
 }
 .contain__title {
   padding-bottom: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .contain__bottons {
   display: flex;
@@ -219,51 +218,62 @@ h2 {
 /* Jesus */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-image: url(../img/desktop/image-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: cover;
-    margin: 0px;
-    padding: 0px;
-    height: 620px;
-    width: 100%;
-  }
+  background-image: url(../img/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  height: 620px;
+}
+.header__main{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   
-  .title {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 40px;
-    color: white;
-    padding-top: 65px;
-    padding-left: 165px;
-  }
-  
-  .navbar__list {
-    display: flex;
-    list-style: none;
-    gap: 35px;
-    padding-top: 20px;
-    font-family: "Alata", sans-serif;
-    color: white;
-    padding-top: 55px;
-    padding-right: 160px;
-  }
-  
-  .navbar__list-item {
-    display: inline-block;
-    border-radius: 20px;
-    transition: all 0.1s ease-in 0s;
-    cursor: pointer;
-  }
-  
-  .navbar__list-item:hover {
-    background-color: black;
-    transform: scale(1.15);
-  }
-  
-  .cuadro {
-    display: flex;
-    align-items: flex-start;
-    align-self: center;
-  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Alata", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  padding-top: 20px;
+  font-family: "Alata", sans-serif;
+  color: white;
+
+  padding-right: 160px;
+}
+
+.navbar__list-item {
+  display: inline-block;
+  border-radius: 20px;
+  transition: all 0.1s ease-in 0s;
+  cursor: pointer;
+}
+
+.navbar__list-item:hover {
+  background-color: black;
+  transform: scale(1.15);
+}
+
+.cuadro {
+  border: 2px solid #FFF;
+  display: inline-block;
+  color: #fff;
+  padding: 50px 80px 30px 30px;
+  margin-top: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5rem;
+}
