@@ -253,7 +253,7 @@ header {
   font-family: "Alata", sans-serif;
   color: white;
 
-  padding-right: 160px;
+  /* padding-right: 160px; */
 }
 
 .navbar__list-item {
