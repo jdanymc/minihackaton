@@ -27,6 +27,9 @@ body {
   text-transform: uppercase;
 }
 
+.navbar__mobile{
+  display: none;
+}
 /* main Marcos*/
 .main__creations {
   max-width: 1440px;
@@ -41,6 +44,9 @@ body {
 
 .flex-desktop input {
   display: none;
+}
+.flex-desktop{
+  width: 100%;
 }
 
 .poster {

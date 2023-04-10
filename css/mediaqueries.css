@@ -29,7 +29,7 @@
         display: grid;
         grid-template-columns: repeat(4,25%);
         gap: 2.1em;
-        width: 92%;
+        width: 93%;
     }
 
     .poster div{
@@ -92,6 +92,10 @@
 
 
 @media (max-width: 768px) {
+
+  .navbar__mobile{
+    display: inline-block;
+  }
     .visor__imagen img {
       width: 100%;
     }
@@ -119,7 +123,7 @@
     .main__creations{
         padding: 50px;
     }
-    /* Jesus */
+      /* Jesus */
       .footer__contain{
         display: flex;
         flex-direction: column;
