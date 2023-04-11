@@ -21,8 +21,11 @@
         justify-content: space-between;
     }
     
-    .creations .boton{
+    .creations .boton1{
         display: block;
+    }
+    .boton2{
+        display: none;
     }
 
     .poster{
@@ -90,6 +93,11 @@
 
 /* main */
 
+@media (max-width:1024px){
+  .visor {
+    height: 700px;
+  }
+}
 
 @media (max-width: 768px) {
 
@@ -98,12 +106,15 @@
   }
     .visor__imagen img {
       width: 100%;
+      display: inline;
     }
     .visor {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 50px;
+      background: none;
+      height: 100%;
     }
     .visor__content {
       display: inline-block;
@@ -111,8 +122,9 @@
       background-color: white;
       transform: unset;
       width: 100%;
-      height: 100%;
       padding: 50px 30px;
+      position: relative;
+      float: none;
     }
     .content__title {
       text-align: center;
